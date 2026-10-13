@@ -1,0 +1,6 @@
+{
+    "php-built-in-server.server": {
+        "root": "./public/index.php",
+        "port": 3000
+    }
+}
