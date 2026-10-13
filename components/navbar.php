@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <div class="container" >
-        <a href="" class="navbar-brand">HIT Combinator</a>
+        <a href="/" class="navbar-brand">HIT Combinator</a>
 
         <button
             class="navbar-toggler"

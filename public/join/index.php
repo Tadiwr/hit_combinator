@@ -1,9 +1,18 @@
 <?php
+
+    $message = "";
+
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $email = $_POST["email"];
         $first_name = $_POST["first_name"];
         $last_name = $_POST["last_name"];
-        $phone_number = $_POST["phone"];
+        $phone_number = $_POST["phone_number"];
+
+        if (str_ends_with($email,"hit.ac.zw") === false) {
+            $message = "You didn't enter a valid HIT email";
+        } else {
+            $message = 'Form Submited Thank you!';
+        }
     }
 ?>
 
@@ -21,6 +30,12 @@
 <body>
     <?php include("../../components/navbar.php") ?>
 
+    <?php 
+        if ($message !="") {
+            echo '<div class="bg-primary text-light container p-2" >'. $message ."</div>";
+        }
+    ?>
+
     <section class="p-5">
         <div class="container text-center d-flex flex-column">
             <h1>Join The Club</h1>
@@ -29,25 +44,25 @@
 
     <section>
         <div class="container">
-            <form action="" method="post">
+            <form action="/join" method="post">
                 <div class="mb-3">
                     <label for="" class="form-label">First Name</label>
-                    <input id="first_name" type="text" required placeholder="e.g Tadiwa" class="form-control">
+                    <input name="first_name" type="text" required placeholder="e.g Tadiwa" class="form-control">
                 </div>
 
                 <div class="mb-3">
                     <label for="" class="form-label">Last Name</label>
-                    <input id="last_name" type="text" required placeholder="e.g Shangwa" class="form-control">
+                    <input name="last_name" type="text" required placeholder="e.g Shangwa" class="form-control">
                 </div>
 
                 <div class="mb-3">
                     <label for="" class="form-label">HIT Email</label>
-                    <input id="email" type="email" required placeholder="e.g h250000Z" class="form-control">
+                    <input name="email" type="email" required placeholder="e.g h250000Z" class="form-control">
                 </div>
 
                 <div class="mb-3">
                     <label for="" class="form-label">Phone Number</label>
-                    <input id="phone_number" type="tel" required placeholder="e.g 0771 234 5678"  class="form-control">
+                    <input name="phone_number" type="tel" required placeholder="e.g 0771 234 5678"  class="form-control">
                 </div>
 
                 <button class="btn btn-primary" type="submit">Submit</button>

@@ -81,7 +81,9 @@
 
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Your HIT email" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-primary" type="button" id="button-addon2">Join The Club</button>
+                <a href="/join">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Join The Club</button>
+                </a>
             </div>
         </div>
     </section>
@@ -105,7 +107,7 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
                         How can I register
                     </button>
                 </h2>
@@ -118,7 +120,7 @@
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
                         When is the next funding round
                     </button>
                 </h2>
@@ -131,7 +133,7 @@
         </div>
     </section>
 
-    <?php include("../../components/footer.php") ?>
+    <?php include("../components/footer.php") ?>
 
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
