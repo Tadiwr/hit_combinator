@@ -2,11 +2,6 @@
 
 HIT Combinator is a fictional startup accelator and incubation progam for HIT Students. This is the repository for HIT Combinator's website. 
 
-## Guide:
-
-1. [Running Project Locally]()
-2. [Folder Structure]()
-
 ## Running Project Locally
 In order to run the project locally make sure you have PHP installed and run the following command to startup the built in php server
 
