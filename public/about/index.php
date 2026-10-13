@@ -42,8 +42,8 @@
         </div>
     </section>
 
-    <section class="container">
-        <div class="d-flex-md gap-2">
+    <section class="container pb-5">
+        <div class="d-flex-lg gap-2">
             <div class="card p-4 d-flex flex-column align-items-center justify-content-center text-center">
                 <img src="/images/headshot_1.jpg" style="width: 100px; height: 100px; border-radius: 100%;" />
                 <p class="fw-bold mt-2">Tanaka Brii</p>
@@ -63,6 +63,8 @@
             </div>
         </div>
     </section>
+
+        <?php include("../../components/footer.php") ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
