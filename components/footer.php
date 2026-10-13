@@ -1,6 +1,6 @@
 <?php ?>
 
-<footer class="bg-dark text-light p-5">
+<footer class="bg-dark text-light p-5 mt-5">
     <div class="container">
         <div>
             <p class="display-4 fw-bold">HIT Combinator</p>
